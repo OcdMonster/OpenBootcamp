@@ -1,0 +1,40 @@
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 1;
+        if (num > 0) {
+            System.out.println("Numero es positivo");
+        } else if (num < 0) {
+            System.out.println("El numero es Negativo");
+        } else {
+            System.out.println("Es cero");
+        }
+        while (num < 3) {
+            System.out.println(num);
+            num++;
+        }
+        do {
+            System.out.println(num);
+            num++;
+        } while (num < 3);
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println(numeroFor);
+        }
+        var estacion = "Jueves";
+        switch (estacion) {
+            case "Primavera":
+                System.out.println("Primavera");
+                break;
+            case "Verano":
+                System.out.println("Verano");
+                break;
+            case "Otoño":
+                System.out.println("Otoño");
+                break;
+            case "Invierno":
+                System.out.println("Invierno");
+            default:
+                System.out.println("no es un una estacion");
+        }
+    }
+}
