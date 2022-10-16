@@ -33,6 +33,7 @@ public class Main {
                 break;
             case "Invierno":
                 System.out.println("Invierno");
+                break;
             default:
                 System.out.println("no es un una estacion");
         }
