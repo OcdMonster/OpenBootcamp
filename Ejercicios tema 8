@@ -1,0 +1,52 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Persona Max = new Persona();
+        Max.setEdad(31);
+        Max.setNombre("Max");
+        Max.setTelefono(5530128921l);
+
+        Persona Monica = new Persona();
+        Monica.setEdad(26);
+        Monica.setNombre("Monica");
+        Monica.setTelefono(5530128921l);
+
+        Persona Chico = new Persona();
+        Chico.setEdad(20);
+        Chico.setNombre("Ignacio");
+        Chico.setTelefono(5530128921l);
+
+        System.out.println(Max.getNombre() + " " + Max.getEdad() + " " + Max.getTelefono());
+        System.out.println(Monica.getNombre() + " " + Monica.getEdad() + " " + Monica.getTelefono());
+        System.out.println(Chico.getNombre() + " " + Chico.getEdad() + " " + Chico.getTelefono());
+
+    }
+}
+
+class Persona {
+    private int edad;
+    private String nombre;
+    private long telefono;
+
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+
+    public int getEdad(){
+        return this.edad;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+    public void setTelefono(long telefono){
+        this.telefono = telefono;
+    }
+    public long getTelefono(){
+        return this.telefono;
+    }
+
+}
