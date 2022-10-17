@@ -1,0 +1,32 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Cliente Max = new Cliente();
+        Max.edad = 31;
+        Max.nombre = "Max";
+        Max.telefono = 5530128921l;
+        Max.credito = "aprobado";
+
+        Trabajador Monica = new Trabajador();
+        Monica.edad = 26;
+        Monica.nombre = "monica";
+        Monica.telefono = 5530128921l;
+        Monica.salario = 30000;
+
+        System.out.println(Max.edad + " " + Max.nombre + " " + Max.telefono + " " + Max.credito);
+        System.out.println(Monica.edad + " " + Monica.nombre + " " + Monica.telefono + " " + Monica.salario);
+
+    }
+}
+
+class Persona {
+    int edad;
+    String nombre;
+    long telefono;
+}
+class Cliente extends Persona {
+    String credito;
+}
+class Trabajador extends Persona {
+    int salario;
+}
