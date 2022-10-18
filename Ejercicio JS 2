@@ -1,0 +1,14 @@
+let nombre = "Max Curiel";
+
+let edad = "31";
+
+let desarrollador = true;
+
+let nacimiento = new Date(1990, 11, 29);
+
+let libro = {
+    Titulo: "Max Demian",
+    Autor: "Herman Gesse",
+    Fecha: new Date("1919-03-01"),
+    paginas: 376
+}
