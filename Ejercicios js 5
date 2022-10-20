@@ -1,0 +1,26 @@
+/*
+- Una variable que contenga tu altura en centímetros (entero)
+
+- Una variable que contenga tu altura en metros (número de coma flotante)
+
+- Una variable que contenga tu peso en kilogramos (número de coma flotante)
+
+- Una variable que contenga tu altura en metros redondeada hacia arriba
+
+- Una variable que contenga tu peso en kilogramos redondeado hacia abajo
+
+- Una variable que contenga si "el máximo valor que se puede obtener en Javascript + 1" es igual al máximo valor que se puede obtener en Javascript*/
+
+
+let alturac = 175;
+console.log(alturac);
+let alturam = 1.75;
+console.log(alturam);
+let pesok = 90.4;
+console.log(pesok);
+let alturar = Number(alturam.toPrecision(2));
+console.log(alturar);
+let pesor = Number(pesok.toPrecision(2));
+console.log(pesor);
+let max_valor = Number.MAX_VALUE === Number.MAX_VALUE+1;
+console.log(max_valor);
