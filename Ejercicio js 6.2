@@ -1,0 +1,28 @@
+//Un objeto con tus datos personales (nombre, apellido, edad, altura, eresDesarrollador)
+const Max = {
+  nombre: "Max",
+  apellido: "Curiel",
+  edad: 31,
+  altura: 1.71,
+  isDeveloper: true
+}
+
+//Una variable que obtenga tu edad a partir del objeto anterior
+let age = datos.edad;
+console.log(age);
+
+//Una lista que contenga el objeto con tus datos personales y un nuevo objeto con los datos personales de tus dos mejores amig@s
+let lista1 = Max;
+console.log(Max);
+
+let amigos = [
+  { nombre: "Orlando", apellido: "Arruti", edad: 34, altura: 1.84, isDeveloper: true},
+  { nombre: "Jose", apellido: "Cancino", edad: 32, altura: 1.81, isDeveloper: false}
+]
+
+const lista2 = [lista1, ...amigos];
+console.log(lista2);
+
+//Una nueva lista con los objetos de la lista anterior ordenados por edad, de mayor a menor
+lista2.sort((a, b) => a.edad - b.edad);
+console.log(lista2);
