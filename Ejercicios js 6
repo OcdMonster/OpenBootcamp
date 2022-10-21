@@ -1,0 +1,26 @@
+//Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+let peliculas = [
+  {titulo: "Matrix", director:"Max", Fecha: new Date("2022-03-01")},
+  {titulo: "Texas", director:"Monica", Fecha: new Date("2010-03-01")},
+  {titulo: "Die Hard", director:"Orlando", Fecha: new Date("1989-03-01")}
+];
+console.log(peliculas);
+//Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+let peliculas2010 = peliculas.filter(obj => obj.Fecha >= new Date("2010-01-01"));
+console.log(peliculas2010);
+
+//Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+let directores = peliculas.map(valor => valor.director)
+  console.log(directores);
+
+//Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+let titulos = peliculas.map(valor => valor.titulo)
+  console.log(titulos);
+
+//Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+let listaCompleta = directores.concat(titulos);
+console.log(listaCompleta);
+
+//Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+let lista2 = [...directores, ...titulos];
+console.log(lista2);
