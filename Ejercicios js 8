@@ -1,0 +1,31 @@
+//Una función sin parámetros que devuelva siempre "true"
+function Developer() {
+    return "True";
+    }
+console.log(Developer());
+
+//Una función asíncrona que utilice un setTimeout y pase por consola un "Hola soy una promesa" 5 segundos después de haberse ejecutado
+setTimeout(() => {
+    console.log("Hola soy una promesa");
+  }, 5000)
+
+
+//Una función generadora de índices pares automáticos
+function* generaIndices(Indice) {
+    while(Indice % 2==0){
+        yield Indice;
+        Indice+= 2;
+        }
+}
+
+const genInd = generaIndices(0);
+
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
+console.log(genInd.next().value);
