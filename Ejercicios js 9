@@ -1,0 +1,21 @@
+//En el archivo index.js crea una función que devuelva un error con un mensaje personalizado
+
+const miFuncion = val => {
+    if(typeof val === "number") {
+        console.log(2*val)
+        
+    }
+    throw new Error("El valor debe ser tipo numero");
+}
+const Double = miFuncion("Perro");
+
+//Registra el error en un archivo a través de un try...catch
+const numero = 8;
+
+try { 
+    const doble = miFuncion(Pez)
+    console.log(doble);
+    console.log("Esta ejecutandose de manera correcta")
+} catch(e) {
+    console.error("ERROR!")
+}
